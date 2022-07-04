@@ -1,0 +1,149 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    background: var(--bg-color-main);
+    color: var(--color-main);
+}
+
+.header__logo {
+    width: 120px;
+    height: 35px;
+}
+
+.header__menuList {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 24px 0;
+    font-size: 18px;
+}
+
+.header__menuItem:first-child {
+    margin-left: 0;
+}
+
+.header__menuItem {
+    list-style: none;
+    margin-left: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.header__menuLink:hover {
+    color: var(--color-primary);
+    transition: 0.4s;
+}
+
+.header__basket {
+    position: relative;
+    margin-right: 40px;
+}
+
+.header__basketPicture {
+    width: 32px;
+    height: 28px;
+}
+
+.header__basketCount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+    border-radius: 50%;
+    background: var(--bg-color-secondary);
+    color: var(--color-secondary);
+    font-size: 12px;
+}
+
+.header__burger,
+.header__cross {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__burgerPicture,
+.header__crossPicture {
+    width: 30px;
+    height: 30px;
+}
+
+.header__cross{
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    z-index: 101;
+}
+
+@media (max-width: 1024px) {
+    .header__logo {
+        flex: 1 1 auto;
+    }
+
+    .header__menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        width: 100%;
+        background: var(--bg-color-main);
+    }
+
+    .header__menuList {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__menuItem:first-child {
+        margin-left: 24px;
+    }
+
+    .header__menuItem {
+        margin-left: 24px;
+        padding: 5px 0;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+}
+
+@media (max-width: 1440px) {
+    .header__menuItem:last-child {
+        display: none;
+    }
+}
+
+/*header__menu--visible*/
+.header__menu--visible {
+    display: block;
+    position: fixed;
+    animation: burger 0.4s ;
+}
+
+.header__menu--visible::after{
+    content:'';
+    display:block;
+    position:fixed;
+    left: 0;
+    width:100%;
+    height:100vh;
+    background-color:rgba(50, 50, 50, 0.6);
+}
+
+@keyframes burger {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

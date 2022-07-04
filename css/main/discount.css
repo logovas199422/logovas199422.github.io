@@ -1,0 +1,134 @@
+.discounts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-main);
+}
+
+.discounts__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 100px 0 85px 0;
+}
+
+.discounts__titleAdditional {
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.discounts__prise {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.discounts__priseOld {
+    color: var(--color-discount);
+    font-size: 36px;
+    margin-right: 32px;
+}
+
+.discounts__priseNew {
+    font-size: 48px;
+}
+
+.discounts__product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+.discounts__productItem:first-child {
+    margin-left: 0;
+}
+
+.discounts__productItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.discounts__ginger{
+    max-width: 180px;
+    margin-bottom: 78px;
+}
+
+.discounts__nootris{
+    margin-bottom: 45px;
+}
+
+.discounts__virus{
+    margin-bottom: 78px;
+}
+
+.discounts__productMainText,
+.discounts__productAdditionalText{
+    font-size: 18px;
+}
+
+.discounts__productAdditionalText{
+    color: var(--color-primary);
+}
+
+.discounts__productMainNootris{
+    font-size: 36px;
+    text-align: center;
+}
+
+.discounts__productAdditionalNootris{
+    font-size: 24px;
+    color: var(--color-primary);
+
+}
+
+.discounts_button{
+    width: 256px;
+    height: 56px;
+    border-radius: 7px;
+    background: var(--color-main);
+    color: var(--color-secondary);
+    font-size: 18px;
+    margin-bottom: 112px;
+}
+
+.discounts_button:hover{
+    background: var(--bg-color-secondary);
+    transition: 0.4s;
+}
+
+@media (max-width: 1024px) {
+    .discounts__title {
+        font-size: 36px;
+    }
+
+    .discounts__product {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .discounts__productItem {
+        margin-left: 0;
+        margin-bottom: 64px;
+    }
+    .discounts__nootris{
+        max-width: 320px;
+    }
+    .discounts__ginger,
+    .discounts__nootris,
+    .discounts__virus{
+        margin-bottom: 24px;
+    }
+}

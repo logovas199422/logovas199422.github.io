@@ -1,0 +1,140 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0">
+    <title>Nootris</title>
+
+    <link rel="icon" href="./assets/icon.ico">
+
+    <link href="./css/base.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header column">
+    <svg class="header__logo">
+        <use xlink:href="/assets/sprite.svg#logo"/>
+    </svg>
+    <nav data-menu class="header__menu">
+        <ul class="header__menuList">
+            <li class="header__menuItem">
+                <a class="header__menuLink" href="javascript:void(0);">FAQ</a>
+            </li>
+            <li class="header__menuItem">
+                <a class="header__menuLink" href="javascript:void(0);">Оплата и доставка</a>
+            </li>
+            <li class="header__menuItem">
+                <a class="header__menuLink" href="javascript:void(0);">Возврат</a>
+            </li>
+            <li class="header__menuItem">
+                <a class="header__menuLink" href="javascript:void(0);">Исследования</a>
+            </li>
+            <li class="header__menuItem">
+                <a class="header__menuLink" href="javascript:void(0);">Личный кабинет</a>
+            </li>
+            <li class="header__menuItem">
+                <a class="header__menuLink" href="tel:+8 (800) 600-09-90">8 (800) 600-09-90</a>
+            </li>
+        </ul>
+        <button data-cross class="header__cross">
+            <svg class="header__crossPicture">
+                <use xlink:href="/assets/sprite.svg#cross"/>
+            </svg>
+        </button>
+    </nav>
+    <button class="header__basket">
+        <svg class="header__basketPicture">
+            <use xlink:href="/assets/sprite.svg#basket"/>
+        </svg>
+        <span class="header__basketCount">
+           22
+        </span>
+    </button>
+    <button data-burger class="header__burger">
+        <svg class="header__burgerPicture">
+            <use xlink:href="/assets/sprite.svg#burger"/>
+        </svg>
+    </button>
+</header>
+<main>
+    <div class="mainBlock">
+        <div class="mainBlock__title">
+            <span class="mainBlock__titleMain">
+                АКТИВИРУЙ<br>
+                ИММУНИТЕТ!
+            </span>
+            <span class="mainBlock__titleAdditional">
+                Всего пять секунд в день помогут укрепить иммунитет<br>
+                и повысить защитные силы организма
+            </span>
+            <img class="mainBlock__drugs" src="/assets/drugs.png" alt="nootris">
+            <img class="mainBlock__lemon" src="/assets/Lemon.png" alt="lemon">
+            <img class="mainBlock__ginger" src="/assets/ginger.png" alt="lemon">
+        </div>
+        <div class="mainBlock__info">
+            <span class="mainBlock__infoMain">
+                NOOTRIS ПОМОГАЕТ
+            </span>
+            <span class="mainBlock__infoAdditional">
+                Вашему организму во время пандемии<br>
+                и сезонных простуд
+            </span>
+        </div>
+    </div>
+    <div class="discounts column">
+        <div class="discounts__title">
+            <span class="discounts__titleMain">
+                ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА
+            </span>
+            <span class="discounts__titleAdditional">
+                СО СКИДКОЙ -15% ПЕРВЫМ!
+            </span>
+        </div>
+        <div class="discounts__prise">
+            <s class="discounts__priseOld">
+                750₽
+            </s>
+            <span class="discounts__priseNew">
+                690₽
+            </span>
+        </div>
+        <div class="discounts__product">
+            <div class="discounts__productItem">
+                <img class="discounts__ginger" src="/assets/ginger.png" alt="lemon">
+                <span class="discounts__productMainText">
+                    Содержит
+                </span>
+                <span class="discounts__productAdditionalText">
+                    имбирь
+                </span>
+            </div>
+            <div class="discounts__productItem">
+                <img class="discounts__nootris" src="/assets/nootris.png" alt="nootris">
+                <span class="discounts__productMainNootris">
+                    + Бесплатная доставка
+                </span>
+                <span class="discounts__productAdditionalNootris">
+                    Специальная цена
+                </span>
+            </div>
+            <div class="discounts__productItem">
+                <img class="discounts__virus" src="/assets/virus.png" alt="virus">
+                <span class="discounts__productMainText">
+                    Нейтрализует
+                </span>
+                <span class="discounts__productAdditionalText">
+                    вирусы
+                </span>
+            </div>
+        </div>
+        <button class="discounts_button">
+            Оформить заказ!
+        </button>
+    </div>
+</main>
+
+<script src="./js/common.js"></script>
+</body>
+</html>
